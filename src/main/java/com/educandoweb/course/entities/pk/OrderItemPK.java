@@ -23,7 +23,7 @@ public class OrderItemPK implements Serializable{
 	@JoinColumn(name = "product_id")
 	private Product product;
 	
-	public Order getOrder() {
+	public Order getOrder() { 
 		return order;
 	}
 	public void setOrder(Order order) {
@@ -50,6 +50,4 @@ public class OrderItemPK implements Serializable{
 		OrderItemPK other = (OrderItemPK) obj;
 		return Objects.equals(order, other.order) && Objects.equals(product, other.product);
 	}
-	
-	
 }
